@@ -1,0 +1,154 @@
+
+PRIMES LANDING PAGE TEMPLATE - CREDITS
+
+
+/****** BOOTSTRAP ******/
+
+Author(s):
+Mark Otto (https://twitter.com/mdo/)
+Jacob Thornton (https://twitter.com/fat/)
+
+License(s):
+MIT License (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+Link(s):
+http://getbootstrap.com/getting-started/
+
+
+
+/****** BACKSTRETCH JQUERY PLUGIN ******/
+
+Author(s):
+Scott Robbin (http://srobbin.com/).
+
+License(s):
+MIT License
+
+Link(s):
+http://srobbin.com/jquery-plugins/backstretch/
+
+
+/****** FONT AWESOME ******/
+
+Author(s):
+Dave Gandy (http://twitter.com/davegandy).
+
+License(s):
+MIT License (http://opensource.org/licenses/mit-license.html)
+
+Link(s):
+http://fontawesome.io/
+
+/****** ELEGANT ICONS ******/
+
+Author(s):
+elegantthemes.com (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons).
+
+/****** IONICONS ******/
+
+Author(s):
+ionicons.com (http://ionicons.com).
+
+/****** RETINA.JS ******/
+
+Author(s):
+Imulus (http://imulus.com/).
+
+License(s):
+MIT License (https://github.com/imulus/retinajs/blob/master/LICENSE)
+
+Link(s):
+https://github.com/imulus/retinajs
+
+
+
+/****** JQUERY ******/
+
+Author(s):
+jQuery Foundation (http://jquery.org/).
+
+License(s):
+MIT License (http://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt)
+
+Link(s):
+http://jquery.com/
+
+
+/****** GOOGLE FONT OPEN SANS ******/
+
+Author(s):
+Steve Matteson (https://profiles.google.com/107777320916704234605/about).
+
+License(s):
+Apache License, version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
+
+Link(s):
+http://www.google.com/fonts/specimen/Open+Sans
+
+/****** Owl Carousel ******/
+
+Author(s):
+http://dimsemenov.com/
+
+License(s):
+MIT License (http://opensource.org/licenses/MIT)
+
+Link(s):
+http://owlgraphic.com/owlcarousel/
+
+/****** Magnific Popup ******/
+
+Author(s):
+Bartosz Wojciechowski
+
+License(s):
+MIT License (http://opensource.org/licenses/MIT)
+
+Link(s):
+http://dimsemenov.com/plugins/magnific-popup/
+
+/****** Cube Portfolio ******/
+
+Author(s):
+Mihai Buricea
+
+Link(s):
+http://scriptpie.com/cubeportfolio/live-preview/
+
+/****** Stellar ******/
+
+Author(s):
+Mark Dalgleish 
+
+License(s):
+MIT License (http://markdalgleish.mit-license.org)
+
+Link(s):
+http://markdalgleish.com/projects/stellar.js 
+
+
+/****** PHOTOS ******/
+
+Author(s):
+WikiImages (http://pixabay.com/en/users/WikiImages/), 
+Paramjeet (http://pixabay.com/en/users/Paramjeet/), 
+Amazon_Green (http://pixabay.com/en/users/Amazon_Green/),
+PublicDomainPictures (http://pixabay.com/en/users/PublicDomainPictures/), 
+TommyFresh (http://pixabay.com/en/users/TommyFresh/), 
+avtoritetkhv(http://pixabay.com/en/users/avtoritetkhv/), 
+unsplash (http://unsplash.com/),
+pexels (http://www.pexels.com/),
+psdchat (http://www.psdchat.com). 
+
+License(s):
+CC0 (http://creativecommons.org/publicdomain/zero/1.0/deed.en/).
+
+Link(s):
+(http://pixabay.com/en/users/WikiImages/), 
+(http://pixabay.com/en/users/Paramjeet/), 
+(http://pixabay.com/en/users/Amazon_Green/),
+(http://pixabay.com/en/users/PublicDomainPictures/), 
+(http://pixabay.com/en/users/TommyFresh/), 
+(http://pixabay.com/en/users/avtoritetkhv/), 
+(http://unsplash.com/).
+

@@ -1,735 +1,463 @@
 {% load staticfiles %}
-<!doctype html>
-<html class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Metis</title>
 
-  <!--IE Compatibility modes-->
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!--Mobile first-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Primes - Landing Page Template</title>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/font-awesome/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+  <!--Colors-->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/colors/hotpink.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/colors/orange.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/colors/green.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/colors/seagreen.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/colors/turquoise.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/colors/blue.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/colors/skyblue.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/colors/purple.css"> -->
 
-  <!-- Metis core stylesheet -->
-  <link rel="stylesheet" href="{% static 'assets/css/main.min.css' %}">
-
-  <!-- metisMenu stylesheet -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.css">
-
-  <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
-      <script src="assets/lib/html5shiv/html5shiv.js"></script>
-      <script src="assets/lib/respond/respond.min.js"></script>
-      <![endif]-->
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-  <!--For Development Only. Not required -->
-  <!-- <script>
-      less = {
-        env: "development",
-        relativeUrls: false,
-        rootpath: "../assets/"
-      };
-    </script> -->
-  <!-- <link rel="stylesheet" href="assets/css/style-switcher.css"> -->
-  <link rel="stylesheet" href="{% static 'assets/css/style-switcher.css' %}">
-  <!-- <link rel="stylesheet/less" type="text/css" href="assets/less/theme.less"> -->
-  <link rel="stylesheet/less" type="text/css" href="{% static 'assets/less/theme.less' %}">
-  <link rel="stylesheet" href="{% static 'css/form.css' %}">
-  <link rel="stylesheet" href="{% static 'css/main.css' %}">
-  <link rel="stylesheet" href="{% static 'css/animations.css' %}">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.2.0/less.min.js"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">
 
-  <!--Modernizr-->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
-<body class="  ">
-  <div class="bg-dark dk" id="wrap">
-    <div id="top">
+<body>
 
-      <!-- .navbar -->
-      <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container-fluid">
-
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <header class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="{% url 'init' %}" class="navbar-brand">
-                <img src="{% static 'assets/img/logo.png' %}" alt="">
-              </a>
-          </header>
-          <div class="topnav">
-            <div class="btn-group">
-              <a data-placement="bottom" data-original-title="Fullscreen" data-toggle="tooltip" class="btn btn-default btn-sm" id="toggleFullScreen">
-                <i class="glyphicon glyphicon-fullscreen"></i>
-              </a>
+  <!-- Top content -->
+  <div class="top-content">
+    <div class="inner-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+            <div class="logo">
+              <h1><a href=""><i class="fa fa-cube"></i> mathsGenerator</a></h1>
             </div>
-            <div class="btn-group">
-              <a href="{% url 'init' %}" data-placement="bottom" data-original-title="E-mail admin" data-toggle="tooltip" class="btn btn-default btn-sm">
-                <i class="fa fa-envelope"></i>
-                <!-- <span class="label label-warning">5</span> -->
-              </a>
-              <!-- <a data-placement="bottom" data-original-title="Messages" href="#" data-toggle="tooltip" class="btn btn-default btn-sm">
-                <i class="fa fa-comments"></i>
-                <span class="label label-danger">4</span>
-              </a> -->
-              <!-- <a data-toggle="modal" data-original-title="Help" data-placement="bottom" class="btn btn-default btn-sm" href="#helpModal">
-                <i class="fa fa-question"></i>
-              </a> -->
+            <h2>Maths For All</h2>
+            <div class="description">
+              Generate Worksheets, whole Textbooks, complete Exam papers, individualised for each student. Create customised online MCQ's courses and run interactive Group Session for in the classroom and out.
             </div>
-            {% if user.is_authenticated %}
-            <div class="btn-group">
-              <a href="{% url 'account_logout' %}" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom" class="btn btn-metis-1 btn-sm">
-                <i class="fa fa-power-off"></i>
-              </a>
+            <div class="top-button">
+              <a class="btn btn-lg" href="#"><i class="fa fa-angle-double-down"></i> Worksheets</a>
+              <a class="btn btn-lg" href="#"> <i class="fa fa-mobile"></i> Textbooks</a>
+              <a class="btn btn-lg" href="#"><i class="fa fa-angle-double-down"></i> Exam Papers</a>
+              <a class="btn btn-lg" href="#"> <i class="fa fa-mobile"></i> MCQ Course</a>
+              <a class="btn btn-lg" href="#"><i class="fa fa-angle-double-down"></i> Group Sessions</a>
             </div>
-            {% endif %}
-            <div class="btn-group">
-              <a data-placement="bottom" data-original-title="Show / Hide Left" data-toggle="tooltip" class="btn btn-primary btn-sm toggle-left" id="menu-toggle">
-                <i class="fa fa-bars"></i>
-              </a>
-              <a data-placement="bottom" data-original-title="Show / Hide Right" data-toggle="tooltip" class="btn btn-default btn-sm toggle-right"> <span class="glyphicon glyphicon-comment"></span> </a>
-            </div>
-          </div>
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <img src="{% static 'assets/img/1.png' %}" alt="">
 
-            <!-- .nav -->
-            <ul class="nav navbar-nav">
-              <li><a href="{% url 'init' %}">Home</a></li>
-              {% if user.is_authenticated and user.username == 'admin' %}
-              <li><a href="/admin">Admin</a></li>{% endif %}
-              <li class='dropdown '>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    PDF generator
-                    <b class="caret"></b>
-                  </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="{% url 'init' %}">
-                      <i class="fa fa-angle-right"></i>&nbsp; Worksheets </a>
-                  </li>
-                  <li>
-                    <a href="{% static 'fixed-header-boxed.html' %}">
-                      <i class="fa fa-angle-right"></i>&nbsp; Textbooks </a>
-                  </li>
-                  <li>
-                    <a href="{% static 'fixed-header-boxed.html' %}">
-                      <i class="fa fa-angle-right"></i>&nbsp; Exam papers </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class='dropdown '>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Online MCQ's
-                    <b class="caret"></b>
-                  </a>
-              </li>
-
-              <li class='dropdown '>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Group Session
-                    <b class="caret"></b>
-                  </a>
-              </li>
-
-            </ul>
-            <!-- /.nav -->
-          </div>
-        </div>
-        <!-- /.container-fluid -->
-      </nav>
-      <!-- /.navbar -->
-      <header class="head">
-        <div class="search-bar">
-          <form class="main-search" action="">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search ...">
-              <span class="input-group-btn">
-            <button class="btn btn-primary btn-sm text-muted" type="button">
-                <i class="fa fa-search"></i>
-            </button>
-        </span>
-            </div>
-          </form>
-          <!-- /.main-search -->
-        </div>
-        <!-- /.search-bar -->
-        <div class="main-bar">
-          <h3>
-              <a href="{% url 'init' %}"><i class="fa fa-home"></i></a>&nbsp; Maths generator</h3>
-        </div>
-        <!-- /.main-bar -->
-      </header>
-      <!-- /.head -->
-    </div>
-    <!-- /#top -->
-    <div id="left">
-
-      {% if user.is_authenticated %}
-      <div class="media user-media bg-dark dker">
-        <div class="user-media-toggleHover">
-          <span class="fa fa-user"></span>
-        </div>
-        <div class="user-wrapper bg-dark">
-
-          <div class="media-body">
-            <h5 class="media-heading">Welcome <a href="{% url 'profile' user.id %}">{{ user.username }}</a></h5>
-            <!-- <ul class="list-unstyled user-info">
-                <li> <a href="">Administrator</a>  </li>
-                <li>Last Access :
-                  <br>
-                  <small>
-                    <i class="fa fa-calendar"></i>&nbsp;{{ user.last_login }}</small>
-                </li>
-              </ul> -->
           </div>
         </div>
       </div>
-      {% endif %}
-
-
-      <!-- #menu -->
-      <ul id="menu" class="bg-blue dker">
-        <li class="nav-header">Menu</li>
-        <li class="nav-divider"></li>
-        <li class="">
-          <a href="{% url 'init' %}">
-            <i class="fa fa-group"></i><span class="link-title">&nbsp;Site Users</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="javascript:;">
-            <i class="fa fa-list-alt "></i>
-            <span class="link-title">Algebra</span>
-            <span class="fa arrow"></span>
-          </a>
-          <ul>
-            <li>
-              <a href="{% static 'init' %}">
-                <i class="fa fa-angle-right"></i>&nbsp; Simple algebra </a>
-            </li>
-            <li>
-              <a href="{% url 'quadratics' %}">
-                <i class="fa fa-angle-right"></i>&nbsp; Quadratic Equations </a>
-            </li>
-            <li>
-              <a href="{% static 'fixed-header-fixed-mini-sidebar.html' %}">
-                <i class="fa fa-angle-right"></i>&nbsp; Polynomials </a>
-            </li>
-          </ul>
-        </li>
-        <li class="">
-          <a href="javascript:;">
-            <i class="fa fa-file"></i>
-            <span class="link-title">Trigonometry</span>
-            <span class="fa arrow"></span>
-          </a>
-          <ul>
-            <li>
-              <a href="{% url 'init' %}">
-                <i class="fa fa-angle-right"></i>&nbsp; Identities
-               </a>
-            </li>
-            <li>
-              <a href="{% static 'fixed-header-boxed.html' %}">
-                <i class="fa fa-angle-right"></i>&nbsp; Pythagoras </a>
-            </li>
-            <li>
-              <a href="{% static 'fixed-header-fixed-mini-sidebar.html' %}">
-                <i class="fa fa-angle-right"></i>&nbsp; Ratios </a>
-            </li>
-          </ul>
-        </li>
-        <li class="">
-          <a href="javascript:;">
-            <i class="fa fa-pencil"></i>
-            <span class="link-title">
-                   Calculus
-          	  </span>
-            <span class="fa arrow"></span>
-          </a>
-          <ul>
-            <li>
-              <a href="{% static 'init' %}">
-                <i class="fa fa-angle-right"></i>&nbsp; First Principles </a>
-            </li>
-            <li>
-              <a href="{% static 'fixed-header-boxed.html' %}">
-                <i class="fa fa-angle-right"></i>&nbsp; Differentiation </a>
-            </li>
-            <li>
-              <a href="{% static 'fixed-header-fixed-mini-sidebar.html' %}">
-                <i class="fa fa-angle-right"></i>&nbsp; Integration </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="{% url 'init' %}">
-            <i class="fa fa-info"></i>
-            <span class="link-title">About</span>
-          </a>
-        </li>
-        <!-- <li>
-            <a href="{% static 'file.html' %}">
-              <i class="fa fa-file"></i>
-              <span class="link-title">
-             File Manager
-          </span>
-            </a>
-          </li>
-          <li>
-            <a href="{% static 'typography.html' %}">
-              <i class="fa fa-font"></i>
-              <span class="link-title">
-            Typography
-          </span>  </a>
-          </li>
-          <li>
-            <a href="{% static 'maps.html' %}">
-              <i class="fa fa-map-marker"></i><span class="link-title">
-            Maps
-          </span>
-            </a>
-          </li>
-          <li>
-            <a href="{% static 'chart.html' %}">
-              <i class="fa fa fa-bar-chart-o"></i>
-              <span class="link-title">
-            Charts
-          </span>
-            </a>
-          </li>
-          <li>
-            <a href="{% static 'calendar.html' %}">
-              <i class="fa fa-calendar"></i>
-              <span class="link-title">
-            Calendar
-          </span>
-            </a>
-          </li> -->
-        <!-- <li>
-            <a href="javascript:;">
-              <i class="fa fa-exclamation-triangle"></i>
-              <span class="link-title">
-              Error Pages
-            </span>
-              <span class="fa arrow"></span>
-            </a>
-            <ul>
-              <li>
-                <a href="{% static '403.html' %}">
-                  <i class="fa fa-angle-right"></i>&nbsp;403</a>
-              </li>
-              <li>
-                <a href="{% static '404.html' %}">
-                  <i class="fa fa-angle-right"></i>&nbsp;404</a>
-              </li>
-              <li>
-                <a href="{% static '405.html' %}">
-                  <i class="fa fa-angle-right"></i>&nbsp;405</a>
-              </li>
-              <li>
-                <a href="{% static '500.html' %}">
-                  <i class="fa fa-angle-right"></i>&nbsp;500</a>
-              </li>
-              <li>
-                <a href="{% static '503.html' %}">
-                  <i class="fa fa-angle-right"></i>&nbsp;503</a>
-              </li>
-              <li>
-                <a href="{% static 'offline.html' %}">
-                  <i class="fa fa-angle-right"></i>&nbsp;offline</a>
-              </li>
-              <li>
-                <a href="{% static 'countdown.html' %}">
-                  <i class="fa fa-angle-right"></i>&nbsp;Under Construction</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="{% static 'grid.html' %}">
-              <i class="fa fa-columns"></i>
-              <span class="link-title">
-    Grid
-    </span>
-            </a>
-          </li>
-          <li>
-            <a href="{% static 'blank.html' %}">
-              <i class="fa fa-square-o"></i>
-              <span class="link-title">
-    Blank Page
-    </span>
-            </a>
-          </li> -->
-        <li class="nav-divider"></li>
-        {% if not user.is_authenticated %}
-        <li>
-          <a href="{% url 'init' %}">
-            <i class="fa fa-sign-in"></i>
-            <span class="link-title">
-    Login Page
-    </span>
-          </a>
-        </li>
-        {% endif %} {% if user.is_authenticated %}
-        <li>
-          <a href="{% url 'account_logout' %}">
-            <i class="fa fa-sign-out"></i>
-            <span class="link-title">
-    Logout
-    </span>
-          </a>
-        </li>
-        {% endif %} {% if not user.is_active %}
-        <li>
-          <a href="{% url 'init' %}">
-            <i class="fa fa-user-plus" aria-hidden="true"></i>
-            <span class="link-title">
-    Register
-    </span>
-          </a>
-        </li>
-        {% endif %}
-
-
-        <!-- <li>
-            <a href="javascript:;">
-              <i class="fa fa-code"></i>
-              <span class="link-title">
-    	Unlimited Level Menu
-    	</span>
-              <span class="fa arrow"></span>
-            </a>
-            <ul>
-              <li>
-                <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a>
-                <ul>
-                  <li> <a href="javascript:;">Level 2</a>  </li>
-                  <li> <a href="javascript:;">Level 2</a>  </li>
-                  <li>
-                    <a href="javascript:;">Level 2  <span class="fa arrow"></span>  </a>
-                    <ul>
-                      <li> <a href="javascript:;">Level 3</a>  </li>
-                      <li> <a href="javascript:;">Level 3</a>  </li>
-                      <li>
-                        <a href="javascript:;">Level 3  <span class="fa arrow"></span>  </a>
-                        <ul>
-                          <li> <a href="javascript:;">Level 4</a>  </li>
-                          <li> <a href="javascript:;">Level 4</a>  </li>
-                          <li>
-                            <a href="javascript:;">Level 4  <span class="fa arrow"></span>  </a>
-                            <ul>
-                              <li> <a href="javascript:;">Level 5</a>  </li>
-                              <li> <a href="javascript:;">Level 5</a>  </li>
-                              <li> <a href="javascript:;">Level 5</a>  </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li> <a href="javascript:;">Level 4</a>  </li>
-                    </ul>
-                  </li>
-                  <li> <a href="javascript:;">Level 2</a>  </li>
-                </ul>
-              </li>
-              <li> <a href="javascript:;">Level 1</a>  </li>
-              <li>
-                <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a>
-                <ul>
-                  <li> <a href="javascript:;">Level 2</a>  </li>
-                  <li> <a href="javascript:;">Level 2</a>  </li>
-                  <li> <a href="javascript:;">Level 2</a>  </li>
-                </ul>
-              </li>
-            </ul>
-          </li> -->
-      </ul>
-      <!-- /#menu -->
     </div>
-    <!-- /#left -->
+  </div>
 
-
-
-    <div id="content">
-      <div class="outer">
-        <div class="inner bg-light lter">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-md-12">
-                {% block app %} {% endblock %} {% block authentication %} {% endblock %}
-              </div>
-              {% block content %} {% endblock %}
-            </div>
-
-            <!-- <h1 id="bootstrap-admin-template">Bootstrap-Admin-Template</h1>
-              <ul>
-                <li>
-                  <a href="https://travis-ci.org/onokumus/Bootstrap-Admin-Template">
-                    <img src="https://travis-ci.org/onokumus/Bootstrap-Admin-Template.svg" alt="Build Status">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://david-dm.org/onokumus/Bootstrap-Admin-Template">
-                    <img src="https://david-dm.org/onokumus/Bootstrap-Admin-Template.svg?theme=shields.io" alt="Dependency Status">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://david-dm.org/onokumus/Bootstrap-Admin-Template#info=devDependencies">
-                    <img src="https://david-dm.org/onokumus/Bootstrap-Admin-Template/dev-status.svg?theme=shields.io" alt="devDependency Status">
-                  </a>
-                </li>
-                <li>
-                  <a href="http://gruntjs.com/">
-                    <img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt">
-                  </a>
-                </li>
-              </ul>
-              <blockquote>
-                <p>Free Admin Template Based On Twitter Bootstrap 3.x</p>
-                <p>Free Admin Template Based On Twitter Bootstrap 3.x</p>
-              </blockquote>
-              <h2 id="toc">TOC</h2>
-              <ul>
-                <li> <a href="#download">Download</a>  </li>
-                <li> <a href="#building">Building</a>  </li>
-                <li> <a href="#demo">Demo</a>  </li>
-                <li> <a href="#release-history">Release History</a>  </li>
-                <li> <a href="#credits">Credits</a>  </li>
-                <li> <a href="#author">Author</a>  </li>
-                <li> <a href="#license">License</a>  </li>
-              </ul>
-              <h2 id="download">Download</h2>
-              <ul>
-                <li>
-                  <p>Bootstrap 2.3.2
-                    <a href="https://github.com/onokumus/Bootstrap-Admin-Template/archive/v1.2.zip">v1.2</a>
-                    ready for use</p>
-                </li>
-                <li>
-                  <p>Bootstrap 3.3.0
-                    <a href="https://github.com/onokumus/Bootstrap-Admin-Template/archive/master.zip">v2.3.2</a>
-                    ready <code>dist</code> folder your use</p>
-                </li>
-              </ul>
-              <h2 id="building">Building</h2>
-              <h4 id="2-3-2-version">2.3.2 Version</h4>
-              <p>required
-                <a href="http://nodejs.org/">node.js</a>  &amp;
-                <a href="http://bower.io/">bower</a>  &amp;
-                <a href="http://gruntjs.com/getting-started">grunt</a>
-              </p>
-              <pre><code class="language-shell">    $ git clone https://github.com/onokumus/Bootstrap-Admin-Template.git yourfoldername
-    $ cd yourfoldername
-    $ npm install
-    $ npm run build
-    $ grunt serve</code></pre>
-              <h4 id="2-3-2-rtl-version">2.3.2 RTL Version</h4>
-              <p>required
-                <a href="http://nodejs.org/">node.js</a>  &amp;
-                <a href="http://bower.io/">bower</a>  &amp;
-                <a href="http://gruntjs.com/getting-started">grunt</a>
-              </p>
-              <pre><code class="language-shell">    $ git clone https://github.com/onokumus/Bootstrap-Admin-Template.git yourfoldername
-    $ cd yourfoldername
-    $ npm install
-    $ npm run buildrtl
-    $ grunt serve</code></pre>
-              <h4 id="1-2-version">1.2 Version</h4>
-              <pre><code>$ git clone -b v1.2 https://github.com/onokumus/Bootstrap-Admin-Template.git yourfoldername
-$ cd yourfoldername
-$ git submodule init
-$ git submodule update
-$ open index.html</code></pre>
-              <h2 id="demo">Demo</h2>
-              <ul>
-                <li> <a href="http://demo.onokumus.com/metis/">Demo v2.3.2</a>  </li>
-                <li> <a href="http://demo.onokumus.com/metis/rtl/">RTL v2.3.2</a>  </li>
-                <li>
-                  <a href="http://demo.onokumus.com/metis/v12">v1.2 <code>not development</code>
-                  </a>
-                </li>
-              </ul>
-              <h2 id="credits">Credits</h2>
-              <ul>
-                <li> <a href="http://nodejs.org/">node.js</a>  </li>
-                <li> <a href="http://bower.io/">bower</a>  </li>
-                <li> <a href="http://gruntjs.com/">Grunt</a>  </li>
-                <li> <a href="http://assemble.io/">Assemble</a>  </li>
-                <li> <a href="http://jquery.com/">jQuery</a>  </li>
-                <li> <a href="http://getbootstrap.com/">Bootstrap</a>  </li>
-                <li> <a href="http://lesscss.org/">LESS</a>  </li>
-                <li> <a href="http://modernizr.com/">Modernizr</a>  </li>
-                <li> <a href="http://momentjs.com/">Moment.js</a>  </li>
-                <li> <a href="https://github.com/subtlepatterns/SubtlePatterns">SubtlePatterns</a>  </li>
-                <li> <a href="http://arshaw.com/fullcalendar/">FullCalendar</a>  </li>
-                <li> <a href="https://github.com/harvesthq/chosen">Chosen</a>  </li>
-                <li> <a href="http://ckeditor.com/">CKEditor</a>  </li>
-                <li> <a href="http://www.eyecon.ro/bootstrap-colorpicker/">Colorpicker for Bootstrap</a>  </li>
-                <li> <a href="http://www.datatables.net">Data Tables</a>  </li>
-                <li> <a href="http://www.eyecon.ro/bootstrap-datepicker">Datepicker for Bootstrap</a>  </li>
-                <li> <a href="http://elfinder.org">elFinder</a>  </li>
-                <li> <a href="http://rustyjeans.com/jquery-plugins/input-limiter">Input Limiter</a>  </li>
-                <li> <a href="http://jasny.github.com/bootstrap">Jasny Bootstrap</a>  </li>
-                <li> <a href="http://jqueryvalidation.org/">jQuery Validation</a>  </li>
-                <li> <a href="http://omnipotent.net/jquery.sparkline">jQuery Sparklines</a>  </li>
-                <li> <a href="http://daneden.github.io/animate.css/">Animate</a>  </li>
-                <li> <a href="http://www.jacklmoore.com/autosize">Autosize</a>  </li>
-                <li> <a href="http://keith-wood.name/countdown.html">Countdown</a>  </li>
-                <li> <a href="https://github.com/dangrossman/bootstrap-daterangepicker">Date range picker</a>  </li>
-                <li> <a href="http://www.flotcharts.org">Flot</a>  </li>
-                <li> <a href="http://jquery.malsup.com/form/">jQuery Form</a>  </li>
-                <li> <a href="http://thecodemine.org">Form Wizard</a>  </li>
-                <li> <a href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/">Gritter</a>  </li>
-                <li> <a href="https://github.com/brandonaaron/jquery-mousewheel">Mouse Wheel</a>  </li>
-                <li> <a href="https://github.com/kevinoconnor7/pagedown-bootstrap">PageDown-Bootstrap</a>  </li>
-                <li> <a href="https://github.com/moxiecode/plupload">Plupload</a>  </li>
-                <li> <a href="http://www.larentis.eu/switch/">Bootstrap Switch</a>  </li>
-                <li> <a href="http://tablesorter.com/">tablesorter</a>  </li>
-                <li> <a href="http://xoxco.com/projects/code/tagsinput/">tagsinput</a>  </li>
-                <li> <a href="http://jdewit.github.io/bootstrap-timepicker/">Bootstrap Timepicker</a>  </li>
-                <li> <a href="http://touchpunch.furf.com/">Touch Punch</a>  </li>
-                <li> <a href="http://uniformjs.com/">Uniform</a>  </li>
-                <li> <a href="http://www.position-relative.net/">Validation Engine</a>  </li>
-                <li> <a href="http://validval.frebsite.nl/">jquery.validVal</a>  </li>
-                <li> <a href="https://github.com/Waxolunist/bootstrap3-wysihtml5-bower">bootstrap3-wysihtml5-bower</a>  </li>
-                <li> <a href="https://github.com/sindresorhus/screenfull.js">screenfull.js</a>  </li>
-                <li> <a href="https://github.com/onokumus/metisMenu">metisMenu</a>  </li>
-              </ul>
-              <h2 id="author">Author</h2>
-              <p><strong>Osman Nuri Okumuş</strong>
-              </p>
-              <ul>
-                <li> <a href="https://github.com/onokumus">github/onokumus</a>  </li>
-                <li> <a href="http://twitter.com/onokumus">twitter/onokumus</a>  </li>
-              </ul>
-              <h2 id="license">License</h2>
-              <p>Copyright (c) 2015 onokumus
-                <br>Released under the MIT license</p>
-              <hr>
-              <p><em>This file was generated by <a href="https://github.com/assemble/verb">verb</a>  on January 13, 2015.</em>
-              </p> -->
-          </div>
+  <!-- Features -->
+  <div class="features-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 features">
+          <h3>Features</h3>
+          <p>
+            Sed non sem libero. Aenean in orci porta, sodales lorem vel, ultricies lacus. Vestibulum eu urna sed leo tempor auctor et vitae augue. Praesent libero leo, tempor eget mattis nec, cursus non felis. Donec vitae orci ut turpis convallis mattis.
+          </p>
         </div>
-        <!-- /.inner -->
       </div>
-      <!-- /.outer -->
+      <div class="row">
+        <div class="col-sm-4 features-box">
+          <div class="icon">
+            <i class="fa fa-apple"></i>
+          </div>
+          <h4>Iphone Version</h4>
+          <p>
+            Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+          </p>
+        </div>
+        <div class="col-sm-4 features-box">
+          <div class="icon">
+            <i class="fa fa-android"></i>
+          </div>
+          <h4>Android Version</h4>
+          <p>
+            Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+          </p>
+        </div>
+        <div class="col-sm-4 features-box">
+          <div class="icon">
+            <i class="fa fa-windows"></i>
+          </div>
+          <h4>Windows Version</h4>
+          <p>
+            Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+          </p>
+        </div>
+      </div>
     </div>
-    <!-- /#content -->
-
-
-
-
-
-    <!-- <div id="right" class="bg-light lter">
-        <div class="alert alert-danger">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Warning!</strong>  Best check yo self, you're not looking too good.
-        </div> -->
-
-    <!-- .well well-small -->
-    <!-- <div class="well well-small dark">
-          <ul class="list-unstyled">
-            <li>Visitor <span class="inlinesparkline pull-right">1,4,4,7,5,9,10</span>
-            </li>
-            <li>Online Visitor <span class="dynamicsparkline pull-right">Loading..</span>
-            </li>
-            <li>Popularity <span class="dynamicbar pull-right">Loading..</span>
-            </li>
-            <li>New Users <span class="inlinebar pull-right">1,3,4,5,3,5</span>
-            </li>
-          </ul>
-        </div><!-- /.well well-small -->
-
-    <!-- .well well-small -->
-    <!-- /.well well-small -->
-
-    <!-- .well well-small -->
-    <!-- <div class="well well-small dark">
-          <span>Default</span> <span class="pull-right"><small>20%</small> </span>
-          <div class="progress xs">
-            <div class="progress-bar progress-bar-info" style="width: 20%"></div>
-          </div>
-          <span>Success</span> <span class="pull-right"><small>40%</small> </span>
-          <div class="progress xs">
-            <div class="progress-bar progress-bar-success" style="width: 40%"></div>
-          </div>
-          <span>warning</span> <span class="pull-right"><small>60%</small> </span>
-          <div class="progress xs">
-            <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
-          </div>
-          <span>Danger</span> <span class="pull-right"><small>80%</small> </span>
-          <div class="progress xs">
-            <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
-          </div>
-        </div> -->
   </div>
-  <!-- /#right -->
-  </div>
-  <!-- /#wrap -->
-  <footer class="Footer bg-dark dker">
-    <!-- <p>2014 &copy; Metis Bootstrap Admin Template</p> -->
-    <p>Disclaimer: This site is not an official <a href="http://www.qqi.ie">QQI</a> site. The offical<a href="http://www.qqi.ie"> QQI</a> site it can be found at <a class="btn btn-primary btn-lg" href="http://www.qqi.ie" role="button">QQI</a>. All resources
-      are used at your own risk.</p>
-  </footer>
-  <!-- /#footer -->
 
-  <!-- #helpModal -->
-  <!-- <div id="helpModal" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Modal title</h4>
+  <!-- Product -->
+  <div class="product-container product-bg1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 product-text">
+          <h3>Iphone mobile apps</h3>
+          <p>
+            Integer ac bibendum lectus. Quisque interdum aliquam felis vel volutpat. Vivamus commodo felis quis dui pharetra, ac venenatis magna lacinia. Vestibulum quis dignissim nibh. Duis vitae felis orci. Aliquam porta interdum feugiat.
+          </p>
+          <div class="product-button">
+            <a class="btn btn-primary" href="#"><i class="fa fa-apple"></i> Buy Now</a>
           </div>
-          <div class="modal-body">
+
+        </div>
+        <div class="col-md-5 product-img">
+          <img src="{% static 'assets/img/2.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product -->
+  <div class="product-container product-bg2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 product-img">
+          <img src="{% static 'assets/img/3.png' %}" alt="">
+
+        </div>
+        <div class="col-md-7 product-text">
+          <h3>Android mobile apps</h3>
+          <p>
+            Integer ac bibendum lectus. Quisque interdum aliquam felis vel volutpat. Vivamus commodo felis quis dui pharetra, ac venenatis magna lacinia. Vestibulum quis dignissim nibh. Duis vitae felis orci. Aliquam porta interdum feugiat.
+          </p>
+          <div class="product-button">
+            <a class="btn btn-primary" href="#"><i class="fa fa-android"></i> Buy Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product -->
+  <div class="product-container product-bg1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 product-text">
+          <h3>Windows mobile apps</h3>
+          <p>
+            Integer ac bibendum lectus. Quisque interdum aliquam felis vel volutpat. Vivamus commodo felis quis dui pharetra, ac venenatis magna lacinia. Vestibulum quis dignissim nibh. Duis vitae felis orci. Aliquam porta interdum feugiat.
+          </p>
+          <div class="product-button">
+            <a class="btn btn-primary" href="#"><i class="fa fa-windows"></i> Buy Now</a>
+          </div>
+
+        </div>
+        <div class="col-md-5 product-img">
+          <img src="{% static 'assets/img/4.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonials -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 testimonials">
+        <h3>Testimonials</h3>
+        <div class="col-sm-4 reviews">
+          <div class="review reviews-panel box-arrow-down">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Pellentesque sit amet augue a mi luctus laoreet ut nec velit. Morbi in fermentum elit.
             </p>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="review-author">
+            <div class="img">
+              <img src="{% static 'assets/img/testimonials/1.jpg' %}" alt=""></div>
+            <p>
+              <a href="#"><strong>David Hoffman</strong></a>
+              <br />
+              <span>Dolor magna...</span>
+            </p>
           </div>
-        </div><!-- /.modal-content -->
-  <!-- </div><!-- /.modal-dialog -->
-  <!-- </div><!-- /.modal -->
-  <!-- /#helpModal -->
+        </div>
+        <div class="col-sm-4 reviews">
+          <div class="review reviews-panel box-arrow-down">
+            <p>
+              Pellentesque sit amet augue a mi luctus laoreet ut nec velit. Morbi in fermentum elit.
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="img">
+              <img src="{% static 'assets/img/testimonials/2.jpg' %}" alt=""></div>
+            <p>
+              <a href="#"><strong>Dana Bell</strong></a>
+              <br />
+              <span>Dolor magna...</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 reviews">
+          <div class="review reviews-panel box-arrow-down">
+            <p>
+              Pellentesque sit amet augue a mi luctus laoreet ut nec velit. Morbi in fermentum elit.
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="img">
+              <img src="{% static 'assets/img/testimonials/3.jpg' %}" alt=""></div>
+            <p>
+              <a href="#"><strong>Mark Jeff</strong><br /></a>
+              <span>Dolor magna...</span>
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <!--jQuery -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </div>
+  </div>
 
-  <!--Bootstrap -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <!-- Subscription -->
+  <div class="subscribe-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 subscribe">
+          <h3>Subscribe to our newsletter</h3>
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut urna eget felis mattis tincidunt id sed risus.</p>
+          <form class="form-inline" action="assets/subscribe.php" method="post">
+            <input type="text" name="email" placeholder="Enter your email">
+            <button type="submit" class="btn btn-subscribe">Subscribe</button>
+          </form>
+          <div class="success-message"></div>
+          <div class="error-message"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- MetisMenu -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.js"></script>
 
-  <!-- Screenfull -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/screenfull.js/2.0.0/screenfull.min.js"></script>
+  <!-- Team -->
+  <div class="team-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 team">
+          <h3>Our Team</h3>
+          <p>
+            Ut ac varius nibh. Nullam est nisl, sagittis sed risus vel, facilisis commodo tortor. Suspendisse suscipit tellus vitae tellus porta rutrum. Proin ac orci auctor, consequat dolor nec, scelerisque nisl. Aliquam imperdiet nulla id scelerisque auctor. Proin
+            egestas mauris vel arcu bibendum ornare.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="team-member">
+            <img src="{% static 'assets/img/team/1.png' %}" alt="">
+            <h4>Lara Thompson</h4>
+            <p>Developer</p>
+            <div class="contact-details">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-tumblr"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-member">
+            <img src="{% static 'assets/img/team/2.png' %}" alt="">
+            <h4>Nicole Kass</h4>
+            <p>Programmer</p>
+            <div class="contact-details">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-tumblr"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-member">
+            <img src="{% static 'assets/img/team/3.png' %}" alt="">
+            <h4>Paul Smith</h4>
+            <p>Software Engineer</p>
+            <div class="contact-details">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-tumblr"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-member">
+            <img src="{% static 'assets/img/team/4.png' %}" alt="">
+            <h4>Gena Chane</h4>
+            <p>Sales Manager</p>
+            <div class="contact-details">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-tumblr"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- FAQ -->
+  <div class="faq-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 faq-text">
+          <h3>Frequently Asked Questions</h3>
+          <p>
+            Duis vitae felis orci. Aliquam porta interdum feugiat. Ut placerat, sem porta adipiscing sagittis, justo neque condimentum lacus, id vulputate velit ante eu arcu. Sed convallis eu ante ut sagittis. Mauris eget arcu consectetur, porttitor leo non, consequat
+            lectus.
+          </p>
+          <div class="col-md-6 col-sm-6 col-xs-12 faq">
+            <div class="faq-box">
+              <h4 class="question"><i class="fa fa-question-circle"></i>Nam ultricies sem sit amet risus?</h4>
+              <p class="answer">Donec accumsan, nunc accumsan scelerisque fringilla, ante risus tincidunt justo, consequat molestie diam nisl sollicitudin lacus. Donec condimentum egestas tellus, ut tempus sem luctus sed. Nulla vel accumsan justo, in faucibus nisl. Duis
+                egestas ante at justo lacinia bibendum.</p>
+            </div>
+            <div class="faq-box">
+              <h4 class="question"><i class="fa fa-question-circle"></i>Nam ultricies sem sit amet risus tempor?</h4>
+              <p class="answer">Donec accumsan, nunc accumsan scelerisque fringilla, ante risus tincidunt justo, consequat molestie diam nisl sollicitudin lacus. Donec condimentum egestas tellus, ut tempus sem luctus sed. Nulla vel accumsan justo, in faucibus nisl. Duis
+                egestas ante at justo lacinia bibendum.</p>
+            </div>
+            <div class="faq-box">
+              <h4 class="question"><i class="fa fa-question-circle"></i>Duis congue ullamcorper?</h4>
+              <p class="answer">Donec accumsan, nunc accumsan scelerisque fringilla, ante risus tincidunt justo, consequat molestie diam nisl sollicitudin lacus. Donec condimentum egestas tellus, ut tempus sem luctus sed. Nulla vel accumsan justo, in faucibus nisl. Duis
+                egestas ante at justo lacinia bibendum.</p>
+            </div>
+          </div>
 
-  <!-- Metis core scripts -->
-  <script src="{% static 'assets/js/core.min.js' %}"></script>
+          <div class="col-md-6 col-sm-6 col-xs-12 faq">
+            <div class="faq-box">
+              <h4 class="question"><i class="fa fa-question-circle"></i>Pellentesque lacinia tristique libero?</h4>
+              <p class="answer">Donec accumsan, nunc accumsan scelerisque fringilla, ante risus tincidunt justo, consequat molestie diam nisl sollicitudin lacus. Donec condimentum egestas tellus, ut tempus sem luctus sed. Nulla vel accumsan justo, in faucibus nisl. Duis
+                egestas ante at justo lacinia bibendum.</p>
+            </div>
+            <div class="faq-box">
+              <h4 class="question"><i class="fa fa-question-circle"></i>Suspendisse sed nisl sit amet ante venenatis?</h4>
+              <p class="answer">Donec accumsan, nunc accumsan scelerisque fringilla, ante risus tincidunt justo, consequat molestie diam nisl sollicitudin lacus. Donec condimentum egestas tellus, ut tempus sem luctus sed. Nulla vel accumsan justo, in faucibus nisl. Duis
+                egestas ante at justo lacinia bibendum.</p>
+            </div>
+            <div class="faq-box">
+              <h4 class="question"><i class="fa fa-question-circle"></i>Nam ac molestie augue?</h4>
+              <p class="answer">Donec accumsan, nunc accumsan scelerisque fringilla, ante risus tincidunt justo, consequat molestie diam nisl sollicitudin lacus. Donec condimentum egestas tellus, ut tempus sem luctus sed. Nulla vel accumsan justo, in faucibus nisl. Duis
+                egestas ante at justo lacinia bibendum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Metis demo scripts -->
-  <script src="{% static 'assets/js/app.js' %}"></script>
-  <script src="{% static 'assets/js/style-switcher.min.js' %}"></script>
+  <!-- Contact us -->
+  <div class="contact-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contact">
+          <h3>Contact Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra odio ac felis iaculis cursus aliquet quis orci. Nunc id lorem ut mi euismod accumsan.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-7 form-group contact-form">
+          <h4>Send message</h4>
+          <form method="post" action="assets/contact.php">
+            <input type="text" name="email" placeholder="Email" class="form-control contact-email">
+            <input type="text" name="subject" placeholder="Subject" class="form-control contact-subject">
+            <textarea name="message" class="form-control" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-contact">Submit</button>
+          </form>
+        </div>
+        <div class="col-sm-5 contact-address contact-about">
+          <h4>About Us</h4>
+          <p>Fusce at leo eros. Morbi mauris arcu, eleifend sit amet turpis ac, porta luctus neque. Etiam ultricies ac augue a venenatis. Quisque aliquam odio eu magna sodales, vel interdum erat suscipit. Mauris ut porttitor tellus.
+          </p>
+          <h4>Address</h4>
+          <p><i class="fa fa-map-marker"></i>13 Brant Street, Burlington, Ontario, Canada</p>
+          <p><i class="fa fa-phone"></i>Phone: 0011 222 335 7773</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 copyright">
+          <p>&copy; Primes Landing Page</p>
+        </div>
+        <div class="col-sm-5 social-icon">
+          <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fa fa-tumblr"></i></a>
+          <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+          <a href="#" class="social-icon"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Javascript -->
+  <script src="{% static 'assets/js/jquery-1.10.2.min.js' %}"></script>
+  <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.backstretch.min.js' %}"></script>
+  <script src="{% static 'assets/js/retina-1.1.0.min.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
 </body>
+
+</html>
