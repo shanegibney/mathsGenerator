@@ -20,7 +20,7 @@ from homeApp import views as home
 
 
 urlpatterns = [
-    url(r'^$', home.init),
+    url(r'^$', home.init, name='init'),
     url(r'^admin/', admin.site.urls),
-    url(r'^quadratics/', quadratics.init),
+    url(r'^quadratics/', quadratics.init, name='quadratics'),
 ]

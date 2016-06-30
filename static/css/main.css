@@ -1,0 +1,58 @@
+.table-cell-center {
+  text-align: center;
+}
+.table-cell-left {
+  text-align: left;
+}
+.table-cell-right {
+  text-align: right;
+}
+.table-cell-top {
+  vertical-align: top;
+}
+.important {
+  text-align: center;
+}
+.urgent {
+  transform: rotate(-90deg);
+}
+.todo_list {
+  border: 1px solid grey;
+}
+.test {
+  color: grey;
+  list-style-type: square;
+}
+.article-title {
+  column-span: all;
+}
+.article {
+  border: 1px solid black;
+  column-span: all;
+}
+a {
+  color: grey;
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+  /*font-weight: 700;*/
+}
+a.contact_button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: initial;
+}
+
+/*input[type='text']{
+  color: red;
+  font-size: 24px;
+  display: block;
+  border-radius: 5px;
+}*/
+
+/*label{
+  margin-top: 15px;
+}*/

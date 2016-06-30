@@ -1,3 +1,21 @@
 {% extends 'index.html' %} {% block app %}
-  <div><p>This is quadratics.html</p></div>
+<div>
+  <p><strong>Factorising quadratic equations</strong></p>
+</div>
+<div>
+  <p><strong>Problems</strong></p>
+  <ol>
+    {% for item in questions %}
+  <li>\({{ item }}\)</li>
+     {% endfor %}
+  </ol>
+</div>
+<div>
+  <p><strong>Solutions</strong></p>
+  <ol>
+    {% for item in solutions %}
+  <li>\({{ item }}\)</li>
+    {% endfor %}
+  </ol>
+</div>
 {% endblock %}
