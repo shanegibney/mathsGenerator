@@ -24,7 +24,7 @@ Initialise directory as a local git repository,
 
 Clone repository from git to here,
 
-    $ git clone
+    $ git clone https://github.com/shanegibney/mathsGenerator.git
 
 Change directory into mathsGenerator,
 
