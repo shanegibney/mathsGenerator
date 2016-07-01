@@ -7,7 +7,9 @@ jQuery(document).ready(function() {
       "static/assets/img/backgrounds/1.jpg"
     , "static/assets/img/backgrounds/2.jpg"
     , "static/assets/img/backgrounds/3.jpg"
-    ], {duration: 3000, fade: 800});
+    // ], {duration: 3000, fade: 800});
+  ], {duration: 10000, fade: 800});
+
 
 
 /***** Subscription form *****/

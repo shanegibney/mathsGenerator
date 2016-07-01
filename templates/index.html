@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
   <link rel="stylesheet" href="{% static 'assets/font-awesome/css/font-awesome.min.css' %}">
   <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+  <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
 
   <!--Colors-->
   <!-- <link rel="stylesheet" type="text/css" href="assets/css/colors/hotpink.css"> -->
@@ -45,18 +47,18 @@
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
             <div class="logo">
-              <h1><a href=""><i class="fa fa-cube"></i> mathsGenerator</a></h1>
+              <h1><a href="{% url 'init' %}"><i class="fa fa-cube"></i> mathsGenerator</a></h1>
             </div>
             <h2>Maths For All</h2>
             <div class="description">
-              Generate Worksheets, whole Textbooks, complete Exam papers, individualised for each student. Create customised online MCQ's courses and run interactive Group Session for in the classroom and out.
+              Generate Worksheets, entire Textbooks, complete Exam papers, individualised for each student. Create customised online MCQ's courses and run interactive Group Sessions for the classroom and beyond.
             </div>
             <div class="top-button">
-              <a class="btn btn-lg" href="#"><i class="fa fa-angle-double-down"></i> Worksheets</a>
-              <a class="btn btn-lg" href="#"> <i class="fa fa-mobile"></i> Textbooks</a>
-              <a class="btn btn-lg" href="#"><i class="fa fa-angle-double-down"></i> Exam Papers</a>
-              <a class="btn btn-lg" href="#"> <i class="fa fa-mobile"></i> MCQ Course</a>
-              <a class="btn btn-lg" href="#"><i class="fa fa-angle-double-down"></i> Group Sessions</a>
+              <a class="btn btn-lg" href="{% url 'quadratics' %}"><i class="fa fa-pencil-square-o"></i> Worksheets</a>
+              <a class="btn btn-lg" href="#"> <i class="fa fa-book"></i> Textbooks</a>
+              <a class="btn btn-lg" href="#"><i class="fa fa-file-text-o"></i> Exam Papers</a>
+              <a class="btn btn-lg" href="#"> <i class="fa fa-list-ol"></i> MCQ Course</a>
+              <a class="btn btn-lg" href="#"><i class="fa fa-users"></i> Group Sessions</a>
             </div>
             <img src="{% static 'assets/img/1.png' %}" alt="">
 
@@ -121,7 +123,6 @@
           <div class="product-button">
             <a class="btn btn-primary" href="#"><i class="fa fa-apple"></i> Buy Now</a>
           </div>
-
         </div>
         <div class="col-md-5 product-img">
           <img src="{% static 'assets/img/2.png' %}" alt="">
