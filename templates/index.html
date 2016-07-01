@@ -49,16 +49,16 @@
             <div class="logo">
               <h1><a href="{% url 'init' %}"><i class="fa fa-cube"></i> mathsGenerator</a></h1>
             </div>
-            <h2>Maths For All</h2>
+            <h2>Individual Problem Sets</h2>
             <div class="description">
               Generate Worksheets, entire Textbooks, complete Exam papers, individualised for each student. Create customised online MCQ's courses and run interactive Group Sessions for the classroom and beyond.
             </div>
             <div class="top-button">
-              <a class="btn btn-lg" href="{% url 'quadratics' %}"><i class="fa fa-pencil-square-o"></i> Worksheets</a>
-              <a class="btn btn-lg" href="#"> <i class="fa fa-book"></i> Textbooks</a>
-              <a class="btn btn-lg" href="#"><i class="fa fa-file-text-o"></i> Exam Papers</a>
-              <a class="btn btn-lg" href="#"> <i class="fa fa-list-ol"></i> MCQ Course</a>
-              <a class="btn btn-lg" href="#"><i class="fa fa-users"></i> Group Sessions</a>
+              <a class="btn btn-lg" href="#worksheets"><i class="fa fa-pencil-square-o"></i> Worksheets</a>
+              <a class="btn btn-lg" href="#textbooks"> <i class="fa fa-book"></i> Textbooks</a>
+              <a class="btn btn-lg" href="#exampapers"><i class="fa fa-file-text-o"></i> Exam Papers</a>
+              <a class="btn btn-lg" href="#mcqs"> <i class="fa fa-list-ol"></i> MCQ Course</a>
+              <a class="btn btn-lg" href="#groupsessions"><i class="fa fa-users"></i> Group Sessions</a>
             </div>
             <img src="{% static 'assets/img/1.png' %}" alt="">
 
@@ -75,36 +75,36 @@
         <div class="col-sm-12 features">
           <h3>Features</h3>
           <p>
-            Sed non sem libero. Aenean in orci porta, sodales lorem vel, ultricies lacus. Vestibulum eu urna sed leo tempor auctor et vitae augue. Praesent libero leo, tempor eget mattis nec, cursus non felis. Donec vitae orci ut turpis convallis mattis.
+            No more copying! Now problems sets can be generated which are unique to each student and either accompanied by the solutions or corrected online. Sign up to save settings for reuse with different parts of this site.
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-4 features-box">
           <div class="icon">
-            <i class="fa fa-apple"></i>
+            <i class="fa fa-file-pdf-o"></i>
           </div>
-          <h4>Iphone Version</h4>
+          <h4>PDF Generator</h4>
           <p>
-            Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+            Generate pdf's unique to each student for worksheets, textbooks or exam papers with customised front page and marking scheme.
           </p>
         </div>
         <div class="col-sm-4 features-box">
           <div class="icon">
-            <i class="fa fa-android"></i>
+            <i class="fa fa-bars"></i>
           </div>
-          <h4>Android Version</h4>
+          <h4>Online MCQ's</h4>
           <p>
-            Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+            Generate online MCQ's problems and enjoy the benefits of instant mark.
           </p>
         </div>
         <div class="col-sm-4 features-box">
           <div class="icon">
-            <i class="fa fa-windows"></i>
+            <i class="fa fa-wifi"></i>
           </div>
-          <h4>Windows Version</h4>
+          <h4>Group Sessions</h4>
           <p>
-            Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+            Have your class compete to solve MCQ's against each other in real time.
           </p>
         </div>
       </div>
@@ -116,12 +116,19 @@
     <div class="container">
       <div class="row">
         <div class="col-md-7 product-text">
-          <h3>Iphone mobile apps</h3>
+          <a name="worksheets"></a>
+          <h3>Worksheets</h3>
           <p>
-            Integer ac bibendum lectus. Quisque interdum aliquam felis vel volutpat. Vivamus commodo felis quis dui pharetra, ac venenatis magna lacinia. Vestibulum quis dignissim nibh. Duis vitae felis orci. Aliquam porta interdum feugiat.
+            Generate individual worksheets with unique problems for each students and accompanying solutions for corrector.
           </p>
+          <ul>
+            <li>Complete the settings</li>
+            <li>Hit the 'Generate' button</li>
+            <li>Download pdf's</li>
+            <li>If your are signed up, your settings will be saved.</li>
+          </ul>
           <div class="product-button">
-            <a class="btn btn-primary" href="#"><i class="fa fa-apple"></i> Buy Now</a>
+            <a class="btn btn-primary" href="#"><i class="fa fa-cogs"></i> Generate</a>
           </div>
         </div>
         <div class="col-md-5 product-img">
@@ -140,12 +147,19 @@
 
         </div>
         <div class="col-md-7 product-text">
-          <h3>Android mobile apps</h3>
+          <a name="textbooks"></a>
+          <h3>Textbooks</h3>
           <p>
-            Integer ac bibendum lectus. Quisque interdum aliquam felis vel volutpat. Vivamus commodo felis quis dui pharetra, ac venenatis magna lacinia. Vestibulum quis dignissim nibh. Duis vitae felis orci. Aliquam porta interdum feugiat.
+            Generate individual text-books with unique problems for each students and accompanying solutions for corrector.
           </p>
+          <ul>
+            <li>Complete the settings</li>
+            <li>Hit the 'Generate' button</li>
+            <li>Download pdf's</li>
+            <li>If your are signed up, your settings will be saved.</li>
+          </ul>
           <div class="product-button">
-            <a class="btn btn-primary" href="#"><i class="fa fa-android"></i> Buy Now</a>
+            <a class="btn btn-primary" href="#"><i class="fa fa-cogs"></i> Generate</a>
           </div>
 
         </div>
@@ -158,12 +172,75 @@
     <div class="container">
       <div class="row">
         <div class="col-md-7 product-text">
-          <h3>Windows mobile apps</h3>
+          <a name="exampapers"></a>
+          <h3>Exam Papers</h3>
           <p>
-            Integer ac bibendum lectus. Quisque interdum aliquam felis vel volutpat. Vivamus commodo felis quis dui pharetra, ac venenatis magna lacinia. Vestibulum quis dignissim nibh. Duis vitae felis orci. Aliquam porta interdum feugiat.
+            Generate individual exam papers with unique problems for each students and accompanying solutions for corrector.
           </p>
+          <ul>
+            <li>Complete the settings</li>
+            <li>Hit the 'Generate' button</li>
+            <li>Download pdf's</li>
+            <li>If your are signed up, your settings will be saved.</li>
+          </ul>
           <div class="product-button">
-            <a class="btn btn-primary" href="#"><i class="fa fa-windows"></i> Buy Now</a>
+            <a class="btn btn-primary" href="#"><i class="fa fa-cogs"></i> Generate</a>
+          </div>
+        </div>
+        <div class="col-md-5 product-img">
+          <img src="{% static 'assets/img/4.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product -->
+  <div class="product-container product-bg2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 product-img">
+          <img src="{% static 'assets/img/3.png' %}" alt="">
+
+        </div>
+        <div class="col-md-7 product-text">
+          <a name="mcqs"></a>
+          <h3>Multiple Choice Questions</h3>
+          <p>
+            Generate individual multiple choice questions, immediately available results.
+          </p>
+          <ul>
+            <li>Complete the settings</li>
+            <li>Hit the 'Generate' button</li>
+            <li>Create unique id for your course</li>
+            <li>If your are signed up, your settings will be saved</li>
+          </ul>
+          <div class="product-button">
+            <a class="btn btn-primary" href="#"><i class="fa fa-cogs"></i> Generate</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product -->
+  <div class="product-container product-bg1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 product-text">
+          <a name="groupsessions"></a>
+          <h3>Group Sessions</h3>
+          <p>
+            Compete as a class working through multiple choice questions.
+          </p>
+          <ul>
+            <li>Complete the settings</li>
+            <li>Hit the 'Generate' button</li>
+            <li>Create unique id for groups session</li>
+            <li>If your are signed up, your settings will be saved.</li>
+          </ul>
+          <div class="product-button">
+            <a class="btn btn-primary" href="#"><i class="fa fa-cogs"></i> Generate</a>
           </div>
 
         </div>
@@ -173,6 +250,7 @@
       </div>
     </div>
   </div>
+
   <!-- Testimonials -->
   <div class="container">
     <div class="row">
