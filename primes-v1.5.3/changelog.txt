@@ -1,0 +1,59 @@
+Changelog:
+
+/* Version 1.5.3: */
+
+- Added new layout style (template-09)
+
+
+/* Version 1.5.2: */
+
+- Updated to Bootstrap v3.3.6
+
+
+/* Version 1.5.1: */
+
+- Updated to Bootstrap v3.3.5
+- Added new layout style (template-08)
+- Added portfolio section
+
+/* Version 1.5: */
+
+- Updated to Bootstrap v3.3.4
+
+/* Version 1.4: */
+
+- Added new layout style (template-05) with registration form and static image background
+- Added new layout style (template-06) with registration form and blured bubble background
+- Added new layout style (template-07) with registration form and geometric background
+- Added new set of icons (ionicons) only for template 05, 06 and 07
+- Added new section (Pricing Tables) only for template 05, 06 and 07
+
+
+
+/* Version 1.3: */
+
+- Added new layout style (template-04)
+
+/* Version 1.2: */
+
+- Updated to Bootstrap v3.3.2
+- Updated to Font Awesome 4.3.0
+- Added new layout style (template-03)
+- Added new set of icons (Elegant Icons)
+
+
+/* Version 1.1: */
+
+- Updated to Bootstrap v3.3.1
+- Updated to Font Awesome 4.2.0
+- Added layout for header (template-02): Menu Fixed Top Position
+- Added 8 Ready to Use Colors
+
+
+
+/* Version 1.0: */
+
+- Initial Release
+- Bootstrap v3.1.1
+- Font Awesome 4.0.3
+- Layout for header: without menu
