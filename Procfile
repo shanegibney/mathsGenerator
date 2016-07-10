@@ -1,1 +1,1 @@
-web: gunicorn mathsProject.wsgi --log-file -
+web: gunicorn mathsproject.wsgi --log-file -
