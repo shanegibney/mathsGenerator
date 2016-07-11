@@ -24,3 +24,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^quadratics/', quadratics.init, name='quadratics'),
 ]
+
+
+from mathsproject import settings
+urlpatterns += patterns('',
+        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+    )
