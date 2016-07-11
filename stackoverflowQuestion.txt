@@ -1,0 +1,50 @@
+Issue with Static Django files on Heroku
+
+
+
+I have deployed by Django project as a Heroku app, but can not get the static files to work.
+
+settings.py
+
+   # Static files (CSS, JavaScript, Images)
+   # https://docs.djangoproject.com/en/1.9/howto/static-files/
+
+   PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+   STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+   STATIC_URL = 'static/'
+
+   # Extra places for collectstatic to find static files.
+   STATICFILES_DIRS = (
+       os.path.join(PROJECT_ROOT, 'static'),
+   )
+
+which is exactly what is recommended at [Django and Static Assets][1]
+
+I have set DISABLE_COLLECTSTATIC to false with,
+
+   $ heroku config:set DISABLE_COLLECTSTATIC=0 --app mathsproject
+
+The file system looks like this,
+
+[![enter image description here][2]][2]
+
+which shows that the 'static' directory is in the root of my Django project. But I do not see where the 'staticfiles' directory is? Should this be created somewhere?
+
+When running,
+
+$ heroku logs
+
+I typically get errors showing that the static files are missing. And this is obvious in the browser too.
+
+   ......
+   2016-07-11T07:39:30.187273+00:00 app[web.1]: Not Found: /static/assets/js/jquery-1.10.2.min.js
+       2016-07-11T07:39:30.264037+00:00 app[web.1]: Not Found: /static/assets/img/4.png
+       2016-07-11T07:39:30.283627+00:00 app[web.1]: Not Found: /static/assets/img/testimonials/1.jpg
+   ........
+
+Thanks,
+
+
+ [1]: https://devcenter.heroku.com/articles/django-assets
+ [2]: http://i.stack.imgur.com/qhHQl.png
