@@ -1,4 +1,9 @@
-# mathsGenerator
+# Maths Generator
+
+Local path /home/pi/mathGenerator/mathsProject
+
+ <img width="1266" alt="screen shot 2016-06-20 at 23 38 37" src="https://cloud.githubusercontent.com/assets/17167992/17078333/464b2186-50e8-11e6-9dc9-84cd451b1458.png">
+
 
 # Installation:
 
