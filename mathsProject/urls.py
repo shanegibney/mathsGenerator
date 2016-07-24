@@ -23,6 +23,8 @@ urlpatterns = [
     url(r'^$', home.init, name='init'),
     url(r'^admin/', admin.site.urls),
     url(r'^quadratics/', quadratics.init, name='quadratics'),
+    url(r'^topics/', quadratics.topics, name='topics'),
+    url(r'^subtopics/(?P<id>\d+)/$', quadratics.subtopics, name='subtopics'),
 ]
 
 

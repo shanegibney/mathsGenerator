@@ -12,8 +12,8 @@ body {
     outline: 0 !important
 }
 
-strong { 
-	font-weight: 600; 
+strong {
+	font-weight: 600;
 }
 
 a, a:hover, a:focus {
@@ -145,7 +145,7 @@ textarea {
     transition: all .3s;
 }
 
-input[type="text"]:focus, 
+input[type="text"]:focus,
 textarea:focus {
 	outline: 0;
     border: none;
@@ -155,18 +155,18 @@ textarea:focus {
     box-shadow: none;
 }
 
-input[type="text"]:-moz-placeholder, textarea:-moz-placeholder { color: #888; 
+input[type="text"]:-moz-placeholder, textarea:-moz-placeholder { color: #888;
 }
 
-input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder { 
-color: #888; 
+input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color: #888;
 }
 
-input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
-color: #888; 
+input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: #888;
 }
 
-.btn-subscribe, 
+.btn-subscribe,
 .btn-contact {
     margin: 0;
     padding: 0;
@@ -192,7 +192,7 @@ color: #888;
     transition: all .3s;
 }
 
-.btn-subscribe:hover, 
+.btn-subscribe:hover,
 .btn-contact:hover {
     background: #FF797E;
     color: #fff;
@@ -203,7 +203,7 @@ color: #888;
     transition: all .3s;
 }
 
-.btn-subscribe:active, 
+.btn-subscribe:active,
 .btn-contact:active {
 	outline: 0;
     background: #FF797E;
@@ -213,7 +213,7 @@ color: #888;
     box-shadow: none;
 }
 
-.btn-subscribe:focus, 
+.btn-subscribe:focus,
 .btn-contact:focus {
 	outline: 0;
 	color: #fff;
@@ -241,7 +241,7 @@ color: #888;
 
 .top-content h2 {
 	margin: 40px 0 10px 0;
-	font-weight: 400; 
+	font-weight: 400;
 }
 
 .top-content .logo h1 {
@@ -252,11 +252,11 @@ color: #888;
 	display: inline-block;
     font-size: 58px;
     line-height: 68px;
-	font-weight: 600; 
+	font-weight: 600;
     color: #FF797E;
 }
 
-.top-content .logo a:hover { 
+.top-content .logo a:hover {
     color: #FF6065;
 }
 
@@ -265,7 +265,7 @@ color: #888;
 	margin: 40px 0 10px 0;
     font-size: 28px;
     line-height: 38px;
-	font-weight: 400; 
+	font-weight: 400;
 }
 
 .top-content .top-button {
@@ -494,33 +494,33 @@ color: #888;
     font-style: italic;
     text-align: left;
 }
-.box-arrow-down { 
+.box-arrow-down {
 position: relative;
 }
 
-.box-arrow-down:after, .box-arrow-down:before { 
-top: 100%; 
-left: 100px; 
-border: solid transparent; 
-content: " "; 
-height: 0; 
-width: 0; 
-position: absolute; 
-pointer-events: none; 
+.box-arrow-down:after, .box-arrow-down:before {
+top: 100%;
+left: 100px;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
 }
 
-.box-arrow-down:after { 
-border-color: rgba(246, 249, 250, 0); 
-border-top-color: #eee; 
-border-width: 18px; 
-margin-left: -18px; 
+.box-arrow-down:after {
+border-color: rgba(246, 249, 250, 0);
+border-top-color: #eee;
+border-width: 18px;
+margin-left: -18px;
 }
 
-.box-arrow-down:before { 
-border-color: rgba(220, 232, 237, 0); 
-border-top-color: #e1e1e1; 
-border-width: 22px; 
-margin-left: -22px; 
+.box-arrow-down:before {
+border-color: rgba(220, 232, 237, 0);
+border-top-color: #e1e1e1;
+border-width: 22px;
+margin-left: -22px;
 }
 
 .img {
@@ -603,7 +603,7 @@ margin-left: -22px;
     padding-bottom: 10px;
 }
 
-.team h3 {    
+.team h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 50px;
     font-weight: 300;
@@ -792,7 +792,7 @@ margin-left: -22px;
     line-height: 36px;
 }
 
-.contact-form, 
+.contact-form,
 .contact-address {
 	padding-bottom: 80px;
 }
@@ -817,7 +817,7 @@ margin-left: -22px;
 	margin: 15px 0 0 0;
 }
 
-.contact-form form input, 
+.contact-form form input,
 .contact-form form textarea {
     width: 90%;
     height: 52px;
@@ -924,12 +924,12 @@ footer {
     body {
         padding-left: 0;
         padding-right: 0;
-    }    
- 
+    }
+
     .top-content .text {
     	text-align: center;
     }
-    
+
 
     .top-content h2, .top-content .logo a, .features h3, .product-text h3, .product-button, .faq-text h3, .subscribe h3, .testimonials h3, .team h3, .contact h3 {
         font-size: 40px;
@@ -939,20 +939,20 @@ footer {
     .top-content .description, .features p, .product-text p, .faq-text p, .subscribe p, .testimonials p, .team p, .contact p {
         padding: 0 20px;
     }
-    
+
     .features-box p, .team-member p, .contact-address p {
         padding: 0 20px;
     }
-    
+
     .contact-form, .contact-address {
         text-align: center;
     }
-    
+
     .contact-form {
         padding-bottom: 40px;
     }
-    
-.contact-form form input, 
+
+.contact-form form input,
 .contact-form form textarea {
         width: 100%;
 }
@@ -960,7 +960,7 @@ footer {
     .contact-address {
         padding-bottom: 65px;
     }
-    
+
 .reviews-panel p {
     padding: 20px;
     margin-bottom: 0;
@@ -969,11 +969,11 @@ footer {
     .copyright, .social-icon {
         text-align: center;
     }
-    
+
     .copyright p {
         padding: 0 20px;
     }
-    
+
     .social-icon {
         margin-top: 15px;
     }
@@ -1019,6 +1019,6 @@ footer {
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
-	
+
 
 }

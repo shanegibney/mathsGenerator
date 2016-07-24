@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block subtopics %}
+{% if subtopicModel %}
+<div class="product-button">
+  {% for item in subtopicModel %}
+  <a class="btn btn-primary" href="{% url 'subtopics' item.id %}"><i class="fa fa-cogs"></i> {{ item.subtopic }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

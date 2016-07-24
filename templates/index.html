@@ -114,9 +114,9 @@
   <!-- Product -->
   <div class="product-container product-bg1">
     <div class="container">
+      <a name="worksheets"></a>
       <div class="row">
-        <div class="col-md-7 product-text">
-          <a name="worksheets"></a>
+        <div class="col-md-12 product-text">
           <h3>Worksheets</h3>
           <p>
             Generate individual worksheets with unique problems for each students and accompanying solutions for corrector.
@@ -127,13 +127,27 @@
             <li>Download pdf's</li>
             <li>If your are signed up, your settings will be saved.</li>
           </ul>
-          <div class="product-button">
-            <a class="btn btn-primary" href="#"><i class="fa fa-cogs"></i> Generate</a>
+        </div>
+        <!-- <div class="col-md-5 product-img"> -->
+        <!-- <img src="{% static 'assets/img/2.png' %}" alt=""> -->
+        <!-- <img src="{% static 'assets/img/3.png' %}" alt=""> -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="product-button">
+              <a class="btn btn-primary" href="{% url 'topics' %}"><i class="fa fa-cogs"></i> Settings</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            {% block topics %} {% endblock %}
+          </div>
+          <div class="col-md-3">
+            {% block subtopics %} {% endblock %}
+          </div>
+          <div class="col-md-3">
+            <p>check boxes and number input</p>
           </div>
         </div>
-        <div class="col-md-5 product-img">
-          <img src="{% static 'assets/img/2.png' %}" alt="">
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
@@ -141,13 +155,13 @@
   <!-- Product -->
   <div class="product-container product-bg2">
     <div class="container">
+      <a name="textbooks"></a>
       <div class="row">
         <div class="col-md-5 product-img">
+          <!-- <img src="{% static 'assets/img/3.png' %}" alt=""> -->
           <img src="{% static 'assets/img/3.png' %}" alt="">
-
         </div>
         <div class="col-md-7 product-text">
-          <a name="textbooks"></a>
           <h3>Textbooks</h3>
           <p>
             Generate individual text-books with unique problems for each students and accompanying solutions for corrector.
@@ -161,7 +175,6 @@
           <div class="product-button">
             <a class="btn btn-primary" href="#"><i class="fa fa-cogs"></i> Generate</a>
           </div>
-
         </div>
       </div>
     </div>
@@ -170,9 +183,9 @@
   <!-- Product -->
   <div class="product-container product-bg1">
     <div class="container">
+      <a name="exampapers"></a>
       <div class="row">
         <div class="col-md-7 product-text">
-          <a name="exampapers"></a>
           <h3>Exam Papers</h3>
           <p>
             Generate individual exam papers with unique problems for each students and accompanying solutions for corrector.
@@ -188,7 +201,8 @@
           </div>
         </div>
         <div class="col-md-5 product-img">
-          <img src="{% static 'assets/img/4.png' %}" alt="">
+          <!-- <img src="{% static 'assets/img/4.png' %}" alt=""> -->
+          <img src="{% static 'assets/img/3.png' %}" alt="">
         </div>
       </div>
     </div>
@@ -197,13 +211,13 @@
   <!-- Product -->
   <div class="product-container product-bg2">
     <div class="container">
+      <a name="mcqs"></a>
       <div class="row">
         <div class="col-md-5 product-img">
+          <!-- <img src="{% static 'assets/img/3.png' %}" alt=""> -->
           <img src="{% static 'assets/img/3.png' %}" alt="">
-
         </div>
         <div class="col-md-7 product-text">
-          <a name="mcqs"></a>
           <h3>Multiple Choice Questions</h3>
           <p>
             Generate individual multiple choice questions, immediately available results.
@@ -226,9 +240,9 @@
   <!-- Product -->
   <div class="product-container product-bg1">
     <div class="container">
+      <a name="groupsessions"></a>
       <div class="row">
         <div class="col-md-7 product-text">
-          <a name="groupsessions"></a>
           <h3>Group Sessions</h3>
           <p>
             Compete as a class working through multiple choice questions.
@@ -245,7 +259,8 @@
 
         </div>
         <div class="col-md-5 product-img">
-          <img src="{% static 'assets/img/4.png' %}" alt="">
+          <!-- <img src="{% static 'assets/img/4.png' %}" alt=""> -->
+          <img src="{% static 'assets/img/3.png' %}" alt="">
         </div>
       </div>
     </div>
@@ -424,6 +439,7 @@
     </div>
   </div>
   </div>
+
   <!-- FAQ -->
   <div class="faq-container">
     <div class="container">

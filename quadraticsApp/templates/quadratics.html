@@ -1,8 +1,8 @@
 {% extends 'index.html' %} {% block app %}
-<div>
-  <p><strong>Factorising quadratic equations</strong></p>
+<div class="row">
+  <strong>Factorising quadratic equations</strong>
 </div>
-<div>
+<div class="col-md-6">
   <p><strong>Problems</strong></p>
   <ol>
     {% for item in questions %}
@@ -10,7 +10,7 @@
      {% endfor %}
   </ol>
 </div>
-<div>
+<div class="col-md-6">
   <p><strong>Solutions</strong></p>
   <ol>
     {% for item in solutions %}
